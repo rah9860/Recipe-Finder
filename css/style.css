@@ -1,0 +1,98 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+section {
+    padding: 70px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.grid-example  div[class^="col"] {
+    border: 1px solid white;
+    background: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+/* Overide Jumbotron's color */
+.jumbotron {
+    background-image:url(../FoodBanner.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    color:white;
+}
+#topNav
+{
+    width: 100%;
+    position:fixed;
+}
+
+#app
+{
+    padding-left: 20px;
+    overflow-y: scroll;
+    overflow-x:inherit;
+    height: 60vh;
+}
+
+/*As per W3 Schools for custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*As Per W3 Schools*/
+/* Modal*/
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.modal-default-button {
+  float: right;
+}
